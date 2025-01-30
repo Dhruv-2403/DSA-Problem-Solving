@@ -1,0 +1,14 @@
+class Solution(object):
+    def longestCommonPrefix(self, l):
+        l.sort()
+        x=l[0]
+        y=l[-1]
+        z=""
+        
+        for i in range(1,min(len(x),len(y))+1):
+
+            if x[i-1]==y[i-1]:
+                z+=x[i-1]
+            else:
+                break
+        return z
