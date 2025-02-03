@@ -1,0 +1,13 @@
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+
+        x=[]
+        for i in s:
+            x.append(ord(i))
+        y=[]
+        for  i in range(1,len(x)):
+        
+            y.append(abs(x[i]-x[i-1]))
+   
+        return sum(y)
+       
