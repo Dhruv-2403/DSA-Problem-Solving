@@ -1,0 +1,13 @@
+class Solution:
+    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
+        x,y=0,0
+        for i in commands:
+            if i=="UP":
+                x-=1
+            if i=="DOWN":
+                x+=1
+            if i=="RIGHT":
+                y+=1
+            if i=="LEFT":
+                y-=1
+        return (x*n)+y
