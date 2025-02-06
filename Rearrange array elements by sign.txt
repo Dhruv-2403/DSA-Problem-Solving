@@ -1,0 +1,15 @@
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        pos=[]
+        neg=[]
+        for i in nums:
+            if i>0:
+                pos.append(i)
+            else:
+                neg.append(i)
+        l=[]
+
+        for i in range(len(nums)//2):
+            l.append(pos[i])
+            l.append(neg[i])
+        return l
