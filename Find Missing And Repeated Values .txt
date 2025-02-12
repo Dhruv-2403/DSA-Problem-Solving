@@ -1,0 +1,30 @@
+class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]])->List[int]:
+        n=len(grid)
+        l=[]
+        s=""
+        d={}
+        for i in range(len(grid)):
+            for j in range(len(grid)):
+                if grid[i][j] not in d:
+                    d[grid[i][j]]=1
+                else:
+                    d[grid[i][j]]+=1
+        x=max(d.values())
+        for i,j in d.items():
+
+            if j==x:
+                s+=str(i)
+
+        l.append(int(s))
+
+        l2=[]
+   
+        x=n**2
+        for i in range(len(grid)):
+            for j in range(len(grid)):
+                l2.append(grid[i][j])
+        l.append((x*(x+1)//2)-sum(l2)+int(s))
+        
+        return l
+
