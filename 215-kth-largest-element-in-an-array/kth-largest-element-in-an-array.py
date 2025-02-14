@@ -1,4 +1,4 @@
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
-        nums.sort(reverse=True)
-        return nums[k-1]
+    def findKthLargest(self, l: List[int], k: int) -> int:
+        l.sort(reverse=True)
+        return l[k-1]
