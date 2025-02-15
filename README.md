@@ -1,4 +1,4 @@
 Data Structures & Algorithms Practice(Leetcode & Codeforces Problems)
 
 
-![Leetcode Stats](https://leetcard.dhruv.sareen/Dhruv_Sareen)
+[![KnlnKS's LeetCode stats](https://leetcode-stats-six.vercel.app/?username=Dhruv_Sareen&theme=dark)](https://github.com/Dhruv_Sareen/leetcode-stats)
