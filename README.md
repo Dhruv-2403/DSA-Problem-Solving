@@ -1,4 +1,4 @@
 Data Structures & Algorithms Practice(Leetcode & Codeforces Problems)
 
 
-[![Leetcode Stats](https://leetcard.Dhruv_Sareen/Dhruv_Sareen)](https://leetcode.com/Dhruv_Sareen)
+![Leetcode Stats](https://leetcard.Dhruv.Sareen/Dhruv_Sareen)
