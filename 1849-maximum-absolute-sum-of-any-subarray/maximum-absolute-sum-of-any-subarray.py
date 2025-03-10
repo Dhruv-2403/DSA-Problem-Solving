@@ -8,7 +8,7 @@ class Solution:
 
             y=max(x,y)
 
-        max1=int(1e9+7)
+        max1=float("inf")
         min1=max1
         min2=max1
         for i in range(n):
