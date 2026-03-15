@@ -8,25 +8,24 @@ class Solution(object):
         :int
         """
 
-        d=Counter(nums1)
-        d2=Counter(nums2)
-        # d3={}
-        # for i in nums1:
-        #     if i not in d:
-        #         d[i]=1
-        #     if i not in d3:
-        #         d3[i]=1
-        #     else:
-        #         d[i]+=1
-        #         d3[i]+=1
-        # for i in nums2:
-        #     if i not in d2:
-        #         d2[i]=1
+        d=Counter()
+        d2=Counter()
+        d3={}
+        for i in nums1:
+            if i not in d:
+                d[i]=1
+           
+            else:
+                d[i]+=1
+               
+        for i in nums2:
+            if i not in d2:
+                d2[i]=1
             # if i not in d3:
             #     d3[i]=1
-            # else:
-            #     d2[i]+=1
-            #     d3[i]+=1
+            else:
+                d2[i]+=1
+                # d3[i]+=1
             
         
         if d==d2:
@@ -80,7 +79,7 @@ class Solution(object):
         
         # return d3
         for i in set(nums1+nums2):
-            if (d[i]+d2[i])%2:
+            if abs(d[i]-d2[i])%2==1:
                 return -1
             x0+=abs(d[i]-d2[i])//2
         return x0//2
